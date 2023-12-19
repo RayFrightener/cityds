@@ -6,7 +6,7 @@ body {
 header {
     background-color: #333;
     color: white;
-    padding: 10px;
+    padding: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,6 +22,10 @@ header {
     align-items: center;
 }
 
+.right-item a {
+    margin-right: 10px; /* Adjust the value as needed */
+}
+
 a {
     color: white;
     text-decoration: none;
@@ -29,5 +33,5 @@ a {
 
 .instagram-logo {
     width: 20px;
-    margin-right: 5px;
+    margin-right: 10px;
 }
