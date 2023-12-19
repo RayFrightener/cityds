@@ -35,3 +35,50 @@ a {
     width: 20px;
     margin-right: 10px;
 }
+
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh; /* Adjust the height as needed */
+}
+
+.welcome-message {
+    text-align: center;
+}
+
+.welcome-message h1 {
+    font-size: 3em; /* Adjust the font size as needed */
+    margin-bottom: 10px;
+    animation: fadeInDown 2s ease-in-out; /* Adjust the animation duration and easing as needed */
+}
+
+.welcome-message p, .welcome-message a {
+    font-size: 1.5em; /* Adjust the font size as needed */
+    margin: 5px 0;
+    animation: fadeInUp 2s ease-in-out; /* Adjust the animation duration and easing as needed */
+    color: #333;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
