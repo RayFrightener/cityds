@@ -1,4 +1,7 @@
 body {
+    min-height: 100vh; /* Set the minimum height of the body to 100% of the viewport height */
+    display: flex;
+    flex-direction: column;
     margin: 0;
     font-family: Arial, sans-serif;
 }
@@ -114,4 +117,27 @@ a:hover {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: right;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Additional style to make the text more visible */
+footer a {
+    color: white;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #cccccc;
 }
