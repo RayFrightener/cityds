@@ -23,12 +23,18 @@ header {
 }
 
 .right-item a {
-    margin-right: 10px; /* Adjust the value as needed */
+    margin-right: 10px;
+    /* Adjust the value as needed */
 }
 
 a {
     color: white;
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    /* Add underline on hover */
 }
 
 .instagram-logo {
@@ -41,7 +47,8 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh; /* Adjust the height as needed */
+    height: 80vh;
+    /* Adjust the height as needed */
 }
 
 .welcome-message {
@@ -49,16 +56,40 @@ a {
 }
 
 .welcome-message h1 {
-    font-size: 3em; /* Adjust the font size as needed */
+    font-size: 3em;
+    /* Adjust the font size as needed */
     margin-bottom: 10px;
-    animation: fadeInDown 2s ease-in-out; /* Adjust the animation duration and easing as needed */
+    animation: fadeInDown 2s ease-in-out;
+    /* Adjust the animation duration and easing as needed */
 }
 
-.welcome-message p, .welcome-message a {
-    font-size: 1.5em; /* Adjust the font size as needed */
-    margin: 5px 0;
-    animation: fadeInUp 2s ease-in-out; /* Adjust the animation duration and easing as needed */
+.welcome-message p {
+    font-size: 1.5em;
+    /* Adjust the font size as needed */
+    margin: 20px 0;
+    /* Increase the margin between "Please check out" and the hyperlinks */
+    animation: fadeInUp 2s ease-in-out;
+    /* Adjust the animation duration and easing as needed */
     color: #333;
+}
+
+.welcome-message a {
+    font-size: 1.5em;
+    /* Adjust the font size as needed */
+    margin: 5px 0;
+    animation: fadeInUp 2s ease-in-out;
+    /* Adjust the animation duration and easing as needed */
+    color: #333;
+}
+
+.welcome-message .vigourines {
+    margin-right: 25px !important;
+    /* Adjust the margin as needed to add more space */
+}
+
+.welcome-message a:hover {
+    text-decoration: underline;
+    /* Add underline on hover */
 }
 
 @keyframes fadeInDown {
@@ -66,6 +97,7 @@ a {
         opacity: 0;
         transform: translateY(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -77,6 +109,7 @@ a {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
