@@ -141,3 +141,43 @@ footer a:hover {
     text-decoration: underline;
     color: #cccccc;
 }
+
+
+
+/* shopping.html css 
+/* styles.css */
+
+/* styles.css */
+
+.product-categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 120px;
+}
+
+.category {
+    text-align: center;
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px; /* Add padding for a slim look */
+    border: 1px solid #333; /* Add border for separation */
+    border-radius: 10px; /* Add border radius for rounded corners */
+}
+
+.category img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.category a {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
