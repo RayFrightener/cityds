@@ -1,0 +1,71 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-item {
+    order: 1;
+}
+
+.right-item {
+    order: 2;
+    display: flex;
+    align-items: center;
+}
+
+.right-item a {
+    margin-right: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.instagram-logo {
+    width: 20px;
+    margin-right: 10px;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center; /* Center the text in the footer */
+    position: fixed; /* Fixed position to stick to the bottom */
+    width: 100%; /* Make the footer span the entire width */
+    bottom: 0; /* Stick to the bottom of the viewport */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Additional style to make the text more visible */
+footer a {
+    color: white;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #cccccc;
+}
+
