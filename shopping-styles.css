@@ -43,15 +43,29 @@ a:hover {
     margin-right: 10px;
 }
 
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Change this line */
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-container {
+    /* Styles for each product container go here */
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
 
 footer {
     background-color: #333;
     color: white;
     padding: 20px;
-    text-align: center; /* Center the text in the footer */
-    position: fixed; /* Fixed position to stick to the bottom */
-    width: 100%; /* Make the footer span the entire width */
-    bottom: 0; /* Stick to the bottom of the viewport */
+    text-align: center;
+    width: 100%;
+    clear: both; /* Clear any floats */
+    position: fixed; /* Relative positioning */
+    bottom: 0; /* Stick to the bottom */
 }
 
 footer p {
