@@ -1,5 +1,5 @@
 body {
-    min-height: 100vh; /* Set the minimum height of the body to 100% of the viewport height */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -27,7 +27,6 @@ header {
 
 .right-item a {
     margin-right: 10px;
-    /* Adjust the value as needed */
 }
 
 a {
@@ -37,7 +36,6 @@ a {
 
 a:hover {
     text-decoration: underline;
-    /* Add underline on hover */
 }
 
 .instagram-logo {
@@ -50,8 +48,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh;
-    /* Adjust the height as needed */
+    min-height: 80vh; /* Adjusted to min-height */
 }
 
 .welcome-message {
@@ -60,39 +57,30 @@ a:hover {
 
 .welcome-message h1 {
     font-size: 3em;
-    /* Adjust the font size as needed */
     margin-bottom: 10px;
     animation: fadeInDown 2s ease-in-out;
-    /* Adjust the animation duration and easing as needed */
 }
 
 .welcome-message p {
     font-size: 1.5em;
-    /* Adjust the font size as needed */
     margin: 20px 0;
-    /* Increase the margin between "Please check out" and the hyperlinks */
     animation: fadeInUp 2s ease-in-out;
-    /* Adjust the animation duration and easing as needed */
     color: #333;
 }
 
 .welcome-message a {
     font-size: 1.5em;
-    /* Adjust the font size as needed */
     margin: 5px 0;
     animation: fadeInUp 2s ease-in-out;
-    /* Adjust the animation duration and easing as needed */
     color: #333;
 }
 
 .welcome-message .vigourines {
     margin-right: 25px !important;
-    /* Adjust the margin as needed to add more space */
 }
 
 .welcome-message a:hover {
     text-decoration: underline;
-    /* Add underline on hover */
 }
 
 @keyframes fadeInDown {
@@ -123,8 +111,10 @@ footer {
     background-color: #333;
     color: white;
     padding: 20px;
-    text-align: right;
-    margin-top: auto; /* Push the footer to the bottom */
+    text-align: center; /* Center the text in the footer */
+    position: fixed; /* Fixed position to stick to the bottom */
+    width: 100%; /* Make the footer span the entire width */
+    bottom: 0; /* Stick to the bottom of the viewport */
 }
 
 footer p {
@@ -142,12 +132,7 @@ footer a:hover {
     color: #cccccc;
 }
 
-
-
-/* shopping.html css 
-/* styles.css */
-
-/* styles.css */
+/* shopping.html css */
 
 .product-categories {
     display: flex;
@@ -161,9 +146,9 @@ footer a:hover {
     text-align: center;
     max-width: 300px;
     margin: 20px;
-    padding: 20px; /* Add padding for a slim look */
-    border: 1px solid #333; /* Add border for separation */
-    border-radius: 10px; /* Add border radius for rounded corners */
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
 }
 
 .category img {
